@@ -109,9 +109,21 @@
         return new cToolbox.Vector(x, y);
     };
     
+    exports.weekDay = (function(exports) {
+        var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+        exports.name = function(number) {
+            return names[number];
+        };
+        
+        exports.number = function(name) {
+            return names.indexOf(name);
+        };
+    })(this.weekDay = {});
+    
 })(typeof window === "undefined" || window === null ? global.cToolbox = {} : window.cToolbox = {} );
 
-console.log(cToolbox.isPrime(11)); //true
-console.log(cToolbox.buildRange(1, 5)); //[1, 2, 3, 4, 5]
-console.log(cToolbox.calcSum(cToolbox.buildRange(1, 4))); //10
-console.log(new cToolbox.Vector(1, 2).plus(new cToolbox.Vector(2, 3)));
+//console.log(cToolbox.isPrime(11)); //true
+//console.log(cToolbox.buildRange(1, 5)); //[1, 2, 3, 4, 5]
+//console.log(cToolbox.calcSum(cToolbox.buildRange(1, 4))); //10
+//console.log(new cToolbox.Vector(1, 2).plus(new cToolbox.Vector(2, 3)));
