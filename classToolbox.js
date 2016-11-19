@@ -124,10 +124,9 @@
     
 })(typeof window === "undefined" || window === null ? global.cToolbox = {} : window.cToolbox = {} );
 
-console.log(cToolbox.isPrime(11)); //true
-console.log(cToolbox.buildRange(1, 5)); //[1, 2, 3, 4, 5]
-console.log(cToolbox.calcSum(cToolbox.buildRange(1, 4))); //10
-console.log(new cToolbox.Vector(1, 2).plus(new cToolbox.Vector(2, 3)));
+//console.log(cToolbox.isPrime(11)); //true
+//console.log(cToolbox.buildRange(1, 5)); //[1, 2, 3, 4, 5]
+//console.log(cToolbox.calcSum(cToolbox.buildRange(1, 4))); //10
+//console.log(new cToolbox.Vector(1, 2).plus(new cToolbox.Vector(2, 3)));
 console.log(weekDay.name(0)); //Sunday
 console.log(weekDay.number("Monday")); //1
-
