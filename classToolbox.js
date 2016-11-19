@@ -8,7 +8,6 @@
         console.log("By: " + name + "\nCreated: " + date +
                            "\nFor: " + about);
     };
-    
     exports.findMin = function(num1, num2) {
         if (num1 < num2) {
             return num1;
@@ -18,7 +17,6 @@
             return "Invalid";
         }
     };
-    
     exports.isEven = function(number) {
         function next(n) {
             if (n === 0) {
@@ -33,7 +31,6 @@
         }
         return next(number);
     };
-    
     exports.countBs = function(string) {
         var bCount = 0;
         for (var i = 0; i < string.length; i++) {
@@ -44,7 +41,6 @@
         }
         return bCount;
     };
-    
     exports.countCharacter = function(string, letter2Find) {
         var letterCount = 0;
         for (var i = 0; i < string.length; i++) {
@@ -55,7 +51,6 @@
         }
         return letterCount;
     };
-    
     exports.isPrime = function(number) {
         if (number < 2) {
             return false;
@@ -67,7 +62,6 @@
         }
         return true;
     };
-    
     exports.buildRange = function(start, end) {
         var results = [];
         for (var i = start; i <= end; i++) {
@@ -75,7 +69,6 @@
         }
         return results;
     };
-    
     exports.calcSum = function(array) {
         var runningSum = 0;
         for (var i = 0; i < array.length; i++) {
@@ -83,7 +76,6 @@
         }
         return runningSum;
     };
-    
     exports.reverseArray = function(array) {
         var rArray = [];
         for (var i = array.length - 1; i >= 0; i--) {
@@ -91,18 +83,15 @@
         }
         return rArray;
     };
-    
     exports.Vector = function(x1, y1) {
         this.x = x1;
         this.y = y1;
     };
-    
     exports.Vector.prototype.plus = function (vect) {
         var x = this.x + vect.x;
         var y = this.y + vect.y;
         return new cToolbox.Vector(x, y);
     };
-    
     exports.Vector.prototype.minus = function (vect) {
         var x = this.x - vect.x;
         var y = this.y - vect.y;
